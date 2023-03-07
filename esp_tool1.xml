@@ -1,0 +1,36 @@
+<tool id="esp_option1" name="esp_option1" version="@TOOL_VERSION@+galaxy@VERSION_SUFFIX@" profile="20.01">
+    <description>Option 1 ESP</description>
+    <macros>
+        <token name="@TOOL_VERSION@">1.0</token>
+        <token name="@VERSION_SUFFIX@">0</token>
+    </macros>
+    <requirements>
+	<requirement type="package" version="0.0.1">espsim</requirement>
+    </requirements>
+    <command detect_errors="exit_code"><![CDATA[
+
+        python option1.py --target '$target_mol' --test '$test_mol'
+        cp output.txt '$Sim_output' 
+
+    ]]></command>
+    <inputs>
+        <param name="target_mol" argument="--tgz" type="data" format="sdf"/>
+        <param name="test_mol" argument="--tgz" type="data" format="sdf"/> 
+    </inputs>
+    
+    <outputs>
+        <data name="Sim_output" format="txt"/>
+    </outputs>
+
+    <tests>
+        <test expect_num_outputs="1">
+            <param name="target_mol" value="target.sdf" />
+            <param name="test_mol" value="data.sdf" />
+            <output name="Sim_output" file="output.txt" ftype="txt" />
+        </test>
+    </tests>
+    
+    <help><![CDATA[
+        Calculates ESP and shape similarity between two molecules
+    ]]></help>
+</tool>
