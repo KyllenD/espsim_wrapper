@@ -5,7 +5,19 @@
         <token name="@VERSION_SUFFIX@">0</token>
     </macros>
     <requirements>
-	<requirement type="package" version="0.0.1">espsim</requirement>
+	<requirement type="package" version="*">psi4</requirement>
+	<requirement type="package" version="*">numpy</requirement>
+	<requirement type="package" version="*">scikit-learn</requirement>
+	<requirement type="package" version="*">mdtraj</requirement>
+	<requirement type="package" version="*">openmm</requirement>
+	<requirement type="package" version="*">openmmforcefields</requirement>
+	<requirement type="package" version="*">openff-toolkit</requirement>
+	<requirement type="package" version="*">pdbfixer</requirement>
+	<requirement type="package" version="*">pypdb</requirement>
+	<requirement type="package" version="2021.09.5">rdkit</requirement>
+	<requirement type="package" version="*">psi4</requirement>
+	<requirement type="package" version="*">resp</requirement>
+	<requirement type="package" version="*">py3dmol</requirement>
     </requirements>
     <command detect_errors="exit_code"><![CDATA[
 
