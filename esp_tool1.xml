@@ -5,29 +5,45 @@
         <token name="@VERSION_SUFFIX@">0</token>
     </macros>
     <requirements>
-	<requirement type="package" version="*">psi4</requirement>
-	<requirement type="package" version="*">numpy</requirement>
-	<requirement type="package" version="*">scikit-learn</requirement>
-	<requirement type="package" version="*">mdtraj</requirement>
-	<requirement type="package" version="*">openmm</requirement>
-	<requirement type="package" version="*">openmmforcefields</requirement>
-	<requirement type="package" version="*">openff-toolkit</requirement>
-	<requirement type="package" version="*">pdbfixer</requirement>
-	<requirement type="package" version="*">pypdb</requirement>
-	<requirement type="package" version="2021.09.5">rdkit</requirement>
-	<requirement type="package" version="*">psi4</requirement>
-	<requirement type="package" version="*">resp</requirement>
-	<requirement type="package" version="*">py3dmol</requirement>
+	<requirement type="package" version="0.0.1">espsim</requirement>
     </requirements>
     <command detect_errors="exit_code"><![CDATA[
+	#if $option.script_option =="option1":
+            python option1.py --target '$target_mol' --test '$test_mol' &&
+            cp output.txt '$Sim_output' &&
+	#end if
+        #if $option.script_option =="option2":
+            python option2.py --target '$target_mol' --test '$test_mol' &&
+            cp output.txt '$Sim_output' &&
+	#end if
+        #if $option.script_option =="option3":
+            python option3.py --target '$target_mol' --test '$test_mol' &&
+            cp output.txt '$Sim_output' &&
+	#end if
 
-        python option1.py --target '$target_mol' --test '$test_mol'
-        cp output.txt '$Sim_output' 
 
     ]]></command>
     <inputs>
-        <param name="target_mol" argument="--tgz" type="data" format="sdf"/>
-        <param name="test_mol" argument="--tgz" type="data" format="sdf"/> 
+	<conditional name="option">
+	    <param name="script_option" type="select" label="Select Option">
+		<option value="option1">Option1</option>
+		<option value="option2">Option2</option>
+		<option value="option3">Option3</option>
+	    </param>
+          <when value="option1">
+            <param name="target_mol" argument="--tgz" type="data" format="sdf"/>
+            <param name="test_mol" argument="--tgz" type="data" format="sdf"/> 
+          </when>
+          <when value="option2">
+            <param name="target_mol" argument="--tgz" type="data" format="sdf"/>
+            <param name="test_mol" argument="--tgz" type="data" format="sdf"/> 
+          </when>
+          <when value="option3">
+            <param name="target_mol" argument="--tgz" type="data" format="sdf"/>
+            <param name="test_mol" argument="--tgz" type="data" format="sdf"/> 
+          </when>
+	</conditional>
+
     </inputs>
     
     <outputs>
@@ -36,6 +52,7 @@
 
     <tests>
         <test expect_num_outputs="1">
+            <param name="script_option" value="option1" />
             <param name="target_mol" value="target.sdf" />
             <param name="test_mol" value="data.sdf" />
             <output name="Sim_output" file="output.txt" ftype="txt" />

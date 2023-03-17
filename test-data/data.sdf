@@ -1,0 +1,294 @@
+scaffold
+                    3D
+ Schrodinger Suite 2022-3.
+ 47 49  0  0  1  0            999 V2000
+   26.9784   29.4561   37.4313 O   0  0  0  0  0  0
+   26.2695   30.7355   37.5820 S   0  0  0  0  0  0
+   27.0123   31.8692   36.5218 N   0  0  0  0  0  0
+   26.1585   31.3572   38.9108 O   0  0  0  0  0  0
+   24.6781   30.4470   37.1089 O   0  0  0  0  0  0
+   24.4882   30.1111   35.7491 C   0  0  0  0  0  0
+   23.9847   31.3630   35.0145 C   0  0  1  0  0  0
+   24.9358   31.8482   34.0664 O   0  0  0  0  0  0
+   22.6790   31.1819   34.2434 C   0  0  1  0  0  0
+   21.5335   31.3567   35.0512 O   0  0  0  0  0  0
+   22.7824   32.2404   33.1581 C   0  0  1  0  0  0
+   22.3341   33.5213   33.5496 O   0  0  0  0  0  0
+   24.2971   32.2466   32.8788 C   0  0  2  0  0  0
+   24.6091   31.2521   31.7832 N   0  0  0  0  0  0
+   24.1539   31.5310   30.4710 C   0  0  0  0  0  0
+   24.3814   30.5831   29.5151 N   0  0  0  0  0  0
+   24.9939   29.4464   29.7730 C   0  0  0  0  0  0
+   25.5071   29.1442   31.0849 C   0  0  0  0  0  0
+   25.3031   30.0752   32.0362 C   0  0  0  0  0  0
+   23.5534   32.5705   30.1974 O   0  0  0  0  0  0
+   25.1337   28.5571   28.7957 N   0  0  0  0  0  0
+   28.2983   32.3804   36.7050 C   0  0  0  0  0  0
+   28.9961   32.0650   37.6674 O   0  0  0  0  0  0
+   29.8635   34.9570   33.5956 C   0  0  0  0  0  0
+   30.7320   34.1462   34.3464 C   0  0  0  0  0  0
+   30.2121   33.3083   35.3519 C   0  0  0  0  0  0
+   28.8219   33.2681   35.6104 C   0  0  0  0  0  0
+   27.9588   34.1027   34.8597 C   0  0  0  0  0  0
+   28.4784   34.9430   33.8557 C   0  0  0  0  0  0
+   25.3996   29.7160   35.3007 H   0  0  0  0  0  0
+   23.7464   29.3120   35.7066 H   0  0  0  0  0  0
+   23.8494   32.1578   35.7418 H   0  0  0  0  0  0
+   22.6513   30.1981   33.7711 H   0  0  0  0  0  0
+   21.3708   30.5611   35.5393 H   0  0  0  0  0  0
+   22.1969   31.9537   32.2867 H   0  0  0  0  0  0
+   21.5929   33.7573   33.0048 H   0  0  0  0  0  0
+   24.6939   33.1981   32.5180 H   0  0  0  0  0  0
+   26.0182   28.2220   31.3265 H   0  0  0  0  0  0
+   25.6893   29.8527   33.0173 H   0  0  0  0  0  0
+   25.5342   27.6424   29.0121 H   0  0  0  0  0  0
+   24.8385   28.7819   27.8584 H   0  0  0  0  0  0
+   30.2662   35.6007   32.8262 H   0  0  0  0  0  0
+   31.7937   34.1627   34.1501 H   0  0  0  0  0  0
+   30.8907   32.6927   35.9259 H   0  0  0  0  0  0
+   26.8964   34.1193   35.0593 H   0  0  0  0  0  0
+   27.8160   35.5826   33.2894 H   0  0  0  0  0  0
+   26.4411   32.1148   35.7146 H   0  0  0  0  0  0
+  1  2  2  0  0  0
+  2  3  1  0  0  0
+  2  4  2  0  0  0
+  2  5  1  0  0  0
+  3 22  1  0  0  0
+  3 47  1  0  0  0
+  5  6  1  0  0  0
+  6  7  1  0  0  0
+  6 30  1  0  0  0
+  6 31  1  0  0  0
+  7  8  1  0  0  0
+  7  9  1  0  0  0
+  7 32  1  0  0  0
+  8 13  1  0  0  0
+  9 10  1  0  0  0
+  9 11  1  0  0  0
+  9 33  1  0  0  0
+ 10 34  1  0  0  0
+ 11 12  1  0  0  0
+ 11 13  1  0  0  0
+ 11 35  1  0  0  0
+ 12 36  1  0  0  0
+ 13 14  1  0  0  0
+ 13 37  1  0  0  0
+ 14 15  1  0  0  0
+ 14 19  1  0  0  0
+ 15 16  1  0  0  0
+ 15 20  2  0  0  0
+ 16 17  2  0  0  0
+ 17 18  1  0  0  0
+ 17 21  1  0  0  0
+ 18 19  2  0  0  0
+ 18 38  1  0  0  0
+ 19 39  1  0  0  0
+ 21 40  1  0  0  0
+ 21 41  1  0  0  0
+ 22 23  2  0  0  0
+ 22 27  1  0  0  0
+ 24 25  1  0  0  0
+ 24 29  2  0  0  0
+ 24 42  1  0  0  0
+ 25 26  2  0  0  0
+ 25 43  1  0  0  0
+ 26 27  1  0  0  0
+ 26 44  1  0  0  0
+ 27 28  2  0  0  0
+ 28 29  1  0  0  0
+ 28 45  1  0  0  0
+ 29 46  1  0  0  0
+M  END
+> <s_m_entry_id>
+18
+
+> <s_m_entry_name>
+2wnb.1
+
+> <r_pdb_PDB_CRYST1_a>
+77.987
+
+> <r_pdb_PDB_CRYST1_b>
+78.347
+
+> <r_pdb_PDB_CRYST1_c>
+99.191
+
+> <r_pdb_PDB_CRYST1_alpha>
+90
+
+> <r_pdb_PDB_CRYST1_beta>
+90
+
+> <r_pdb_PDB_CRYST1_gamma>
+90
+
+> <s_pdb_PDB_CRYST1_Space_Group>
+I 2 2 2
+
+> <i_pdb_PDB_CRYST1_z>
+8
+
+> <s_pdb_PDB_format_version>
+3.30
+
+> <s_m_Source_Path>
+/scratch/UCT_Projects/sialyltransferase/pST3Gal-I/pST3Gal-I/RBFE
+
+> <s_m_Source_File>
+2wnb.pdb
+
+> <i_m_Source_File_Index>
+1
+
+> <s_pdb_PDB_TITLE>
+CRYSTAL STRUCTURE OF A MAMMALIAN SIALYLTRANSFERASE IN COMPLEX WITH DISACCHARIDE AND CMP
+
+> <s_pdb_PDB_ID>
+2WNB
+
+> <s_pdb_PDB_CLASSIFICATION>
+TRANSFERASE
+
+> <s_pdb_PDB_DEPOSITION_DATE>
+08-JUL-09
+
+> <r_pdb_PDB_R>
+0.175
+
+> <r_pdb_PDB_Rfree>
+0.213
+
+> <r_pdb_PDB_RESOLUTION>
+1.55
+
+> <s_pdb_PDB_EXPDTA>
+X-RAY DIFFRACTION
+
+> <r_pdb_PDB_EXPDTA_TEMPERATURE>
+173
+
+> <s_pdb_PDB_REMARK_350_Biomolecule_1_Transform_1_Chains>
+A, B
+
+> <s_pdb_PDB_REMARK_350_Biomolecule_1_Transform_1_Matrix_1>
+1.000000 0.000000 0.000000   0.000000;0.000000 1.000000 0.000000   0.000000;0.000000 0.000000 1.000000   0.000000
+
+> <b_ppw_prepared>
+1
+
+> <s_ppw_prepared_with_version>
+2022-3
+
+> <b_ppw_created_disulfur>
+1
+
+> <r_ppw_preprocess_pH>
+7.4
+
+> <s_ppw_het_states>
+eJxNkkEOgzAMBL+CcqZVdoE07VcQP6h66wn177WDF8KBXTt4bAx7QnoNq10Yh7yNw8rQKXQOXUJL6CO0hj5DkWVEhJAQE4JCVAgLcSEwRKbIPGcVmUa+oTmhKTSFptAUmg3tzl/fYIwNGA5h5yu7RNZOqYctVyJt+ghrWi/7DOspkT2XO4/wzbAPVNHMrMDN0gdq0rKlC3xt1I59vdSeoRlb9pygHjRqwzy34YFe0RfNpQ/OGm9aFJS+xvtUndSjBv4BbvluY+5psr/RbM7WM6FY5Ce/cfh83+/jvm2/P0DUkQM=
+
+> <r_i_Potential_Energy-S-OPLS>
+41.7915307758797
+
+> <r_i_RMS_Derivative-S-OPLS>
+0.0471822235317194
+
+> <r_i_Max_Derivative-S-OPLS>
+0.151563942599766
+
+> <r_i_Stretch_Energy-S-OPLS>
+6.42342321262319
+
+> <r_i_Bend_Energy-S-OPLS>
+16.4847614620937
+
+> <r_i_LJ-14_Energy-S-OPLS>
+35.1617274839211
+
+> <r_i_El-14_Energy-S-OPLS>
+-8.4436720535693
+
+> <r_i_Van_der_Waals_Energy-S-OPLS>
+-6.21457582875475
+
+> <r_i_Electrostatic_Energy-S-OPLS>
+-2.14275108112534
+
+> <r_i_Dihedral_Energy-S-OPLS>
+0.0153308962101146
+
+> <r_i_target_temperature>
+298
+
+> <s_m_job_name>
+glide-dock_SP_1
+
+> <s_i_glide_gridfile>
+glide-grid_1
+
+> <i_i_glide_lignum>
+1
+
+> <i_i_glide_rotatable_bonds>
+9
+
+> <r_i_docking_score>
+-7.28456470326917
+
+> <r_i_glide_ligand_efficiency>
+-0.251191886319627
+
+> <r_i_glide_ligand_efficiency_sa>
+-0.771741057949329
+
+> <r_i_glide_ligand_efficiency_ln>
+-1.6679805964259
+
+> <r_i_glide_gscore>
+-7.28456470326917
+
+> <r_i_glide_lipo>
+-1.81014043840618
+
+> <r_i_glide_hbond>
+-0.400241545686434
+
+> <r_i_glide_metal>
+0
+
+> <r_i_glide_rewards>
+-1.06405574453277
+
+> <r_i_glide_evdw>
+-40.5131416320801
+
+> <r_i_glide_ecoul>
+-15.4116458892822
+
+> <r_i_glide_erotb>
+0.458435657273678
+
+> <r_i_glide_esite>
+-0.131158666921132
+
+> <r_i_glide_emodel>
+-78.7817559405605
+
+> <r_i_glide_energy>
+-55.9247875213623
+
+> <r_i_glide_einternal>
+8.06276702880859
+
+> <i_i_glide_confnum>
+111
+
+> <i_i_glide_posenum>
+360
+
+> <r_i_glide_eff_state_penalty>
+0
+
+$$$$
