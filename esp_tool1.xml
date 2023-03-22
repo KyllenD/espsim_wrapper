@@ -9,15 +9,15 @@
     </requirements>
     <command detect_errors="exit_code"><![CDATA[
 	#if $option.script_option =="option1":
-            python option1.py --target '$target_mol' --test '$test_mol' &&
+            python '$__tool_directory__/option1.py' --target '$target_mol' --test '$test_mol' &&
             cp output.txt '$Sim_output' &&
 	#end if
         #if $option.script_option =="option2":
-            python option2.py --target '$target_mol' --test '$test_mol' &&
+            python '$__tool_directory__/option2.py' --target '$target_mol' --test '$test_mol' &&
             cp output.txt '$Sim_output' &&
 	#end if
         #if $option.script_option =="option3":
-            python option3.py --target '$target_mol' --test '$test_mol' &&
+            python '$__tool_directory__/option3.py' --target '$target_mol' --test '$test_mol' &&
             cp output.txt '$Sim_output' &&
 	#end if
 
@@ -31,16 +31,16 @@
 		<option value="option3">Option3</option>
 	    </param>
           <when value="option1">
-            <param name="target_mol" argument="--tgz" type="data" format="sdf"/>
-            <param name="test_mol" argument="--tgz" type="data" format="sdf"/> 
+            <param name="target_mol" argument="--target" type="data" format="sdf"/>
+            <param name="test_mol" argument="--test" type="data" format="sdf"/> 
           </when>
           <when value="option2">
-            <param name="target_mol" argument="--tgz" type="data" format="sdf"/>
-            <param name="test_mol" argument="--tgz" type="data" format="sdf"/> 
+            <param name="target_mol" argument="--target" type="data" format="sdf"/>
+            <param name="test_mol" argument="--test" type="data" format="sdf"/> 
           </when>
           <when value="option3">
-            <param name="target_mol" argument="--tgz" type="data" format="sdf"/>
-            <param name="test_mol" argument="--tgz" type="data" format="sdf"/> 
+            <param name="target_mol" argument="--target" type="data" format="sdf"/>
+            <param name="test_mol" argument="--test" type="data" format="sdf"/> 
           </when>
 	</conditional>
 
