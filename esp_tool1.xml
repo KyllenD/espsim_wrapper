@@ -9,16 +9,16 @@
     </requirements>
     <command detect_errors="exit_code"><![CDATA[
 	#if $option.script_option =="option1":
-            python '$__tool_directory__/option1.py' --target '$target_mol' --test '$test_mol' &&
-            ln -s output.txt '$Sim_output' &&
+            python '$__tool_directory__/option_1.py' --target '$target_mol' --test '$test_mol' &&
+            ln -s output.txt '$Sim_output' 
 	#end if
         #if $option.script_option =="option2":
-            python '$__tool_directory__/option2.py' --target '$target_mol' --test '$test_mol' &&
-            ln -s output.txt '$Sim_output' &&
+            python '$__tool_directory__/option_2.py' --target '$target_mol' --test '$test_mol' &&
+            ln -s output.txt '$Sim_output' 
 	#end if
         #if $option.script_option =="option3":
-            python '$__tool_directory__/option3.py' --target '$target_mol' --test '$test_mol' &&
-            ln -s output.txt '$Sim_output' &&
+            python '$__tool_directory__/option_3.py' --target '$target_mol' --test '$test_mol' &&
+            ln -s output.txt '$Sim_output' 
 	#end if
 
 
