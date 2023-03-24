@@ -1,5 +1,5 @@
 <tool id="esp_option1" name="esp_option1" version="@TOOL_VERSION@+galaxy@VERSION_SUFFIX@" profile="20.01">
-    <description>Option 1 ESP</description>
+    <description>ESP Shape Similarity Tool</description>
     <macros>
         <token name="@TOOL_VERSION@">1.0</token>
         <token name="@VERSION_SUFFIX@">0</token>
@@ -31,16 +31,16 @@
 		<option value="option3">Option3</option>
 	    </param>
           <when value="option1">
-            <param name="target_mol" argument="--tgz" type="data" format="sdf"/>
-            <param name="test_mol" argument="--tgz" type="data" format="sdf"/> 
+            <param name="target_mol" argument="--target" type="data" format="sdf"/>
+            <param name="test_mol" argument="--test" type="data" format="sdf"/> 
           </when>
           <when value="option2">
-            <param name="target_mol" argument="--tgz" type="data" format="sdf"/>
-            <param name="test_mol" argument="--tgz" type="data" format="sdf"/> 
+            <param name="target_mol" argument="--target" type="data" format="sdf"/>
+            <param name="test_mol" argument="--test" type="data" format="sdf"/> 
           </when>
           <when value="option3">
-            <param name="target_mol" argument="--tgz" type="data" format="sdf"/>
-            <param name="test_mol" argument="--tgz" type="data" format="sdf"/> 
+            <param name="target_mol" argument="--target" type="data" format="sdf"/>
+            <param name="test_mol" argument="--test" type="data" format="sdf"/> 
           </when>
 	</conditional>
 
