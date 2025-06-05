@@ -13,7 +13,7 @@ import argparse,sys
 import pandas as pd 
 import os
 import numpy as np
-#import psi4
+import psi4
 
 def mmap_read_sdf(filename):
     with open(filename, 'r+b') as f:
