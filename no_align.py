@@ -59,7 +59,7 @@ if charge=="psi4":
     psi4.set_memory('240 GB')
     psi4.set_num_threads(16)
     psi4.set_options({'geom_maxiter':5000,'maxiter':5000})
-    refCoor,refCharge,refmol2=GetMolProps(data[0],0,[],'gasteiger')
+    refCoor,refCharge=GetMolProps(data[0],0,[],'gasteiger')
     mol=data[0]
     mol_block=Chem.MolToMolBlock(mol)
     pybel_mol = pybel.readstring("mol", mol_block)
@@ -69,7 +69,7 @@ if charge=="psi4":
     refVdw = np.array([Chem.GetPeriodicTable().GetRvdw(a.GetAtomicNum()) for a in renum_ref.GetAtoms()]).reshape(-1,1)
 
 if charge=="gasteiger":
-    refCoor,refCharge,refmol2=GetMolProps(data[0],0,[],'gasteiger')
+    refCoor,refCharge=GetMolProps(data[0],0,[],'gasteiger')
     molblock = Chem.MolToMolBlock(renum_ref)
     obmol = pybel.ob.OBMol()
     obconv = pybel.ob.OBConversion()
@@ -88,7 +88,7 @@ for mol in data:
     renum_mol = rdmolops.RenumberAtoms(mol, new_order)
     shapesim = GetShapeSim(mol, data[0])
     if charge=="psi4":
-        prbCoor,prbCharge,prbmol2=GetMolProps(mol,0,[],'gasteiger')
+        prbCoor,prbCharge=GetMolProps(mol,0,[],'gasteiger')
         mol=renum_mol
         mol_block=Chem.MolToMolBlock(mol)
         pybel_mol = pybel.readstring("mol", mol_block)
@@ -106,7 +106,7 @@ for mol in data:
         similarity=GetIntegralsViaGaussians(prbCoor,refCoor,prbCharge,refCharge,met)
         espsim=Renormalize(similarity,met,None)
     else:
-        prbCoor,prbCharge,prbmol2=GetMolProps(mol,0,[],'gasteiger')
+        prbCoor,prbCharge=GetMolProps(mol,0,[],'gasteiger')
         molblock = Chem.MolToMolBlock(renum_mol)
         obmol = pybel.ob.OBMol()
         obconv = pybel.ob.OBConversion()
