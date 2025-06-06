@@ -67,7 +67,7 @@ if charge=="psi4":
     psi4.set_memory('240 GB')
     psi4.set_num_threads(16)
     psi4.set_options({'geom_maxiter':5000,'maxiter':5000})
-    refCoor,refCharge,refmol2=GetMolProps(data[0],0,[],'gasteiger')
+    refCoor,refCharge=GetMolProps(data[0],0,[],'gasteiger')
     mol=data[0]
     mol_block=Chem.MolToMolBlock(mol)
     pybel_mol = pybel.readstring("mol", mol_block)
